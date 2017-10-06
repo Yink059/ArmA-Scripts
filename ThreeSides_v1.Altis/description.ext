@@ -1,0 +1,105 @@
+class Header
+{
+	gameType = CTF;
+	minPlayers = 1;
+	maxplayers = 13;
+};
+onLoadName = "Three Sides";
+onLoadMission = "2 player factions capture a flag from AI and each other.";
+onLoadIntro = "2 player factions capture a flag from AI and each other.";
+onLoadMissionTime = 1;
+onLoadIntroTime = 1;
+loadScreen = "TGtvtCoopBanner.jpg";
+author = "Unkl (TacticalGamer.com)";
+
+joinUnassigned = 0;
+saving = 0;
+enableTeamSwitch = 0;
+//showGroupIndicator = 1;
+disabledAI = 1;
+respawn = "BASE";
+respawnDelay = 1;
+respawnVehicleDelay = 60;
+respawnTemplates[] = {"Tickets"};
+aiKills = 1;
+//scriptedPlayer = 1;
+debriefing = 1;
+enableDebugConsole = 1;
+
+class cfgFunctions {
+	#include "TG\CfgFunctions.hpp"
+};
+#include "TG\dialog.hpp"
+
+class Params
+{
+	class MissionTimer
+	{
+		title = "Mission Timer";
+		values[] = {1200, 1800, 2400};
+		texts[] = {"20 min","30 min", "40 min"};
+		default = 1200;		
+	};
+	class NumberStartPositions
+	{
+		title = "Number of starting positions for flag";
+		values[] = {1,2,3};
+		texts[] = {"1","2","3"};
+		default = 3;
+	};
+	class NumberRespawnTickets
+	{
+		title = "Respawn Tickets";
+		values[] = {0,2,5,8,10};
+		texts[] = {"None","2","5","8","10"};
+		default = 5;
+	};
+	class BleedOutTime
+	{
+		title = "Bleed Out Time";
+		values[] = {180,300,360,480};
+		texts[] = {"3 min","5 min","6 min","8 min"};
+		default = 300;
+	};
+	class RespawnAfter
+	{
+		title = "Respawn after x seconds";
+		values[] = {10,30,60,90,120};
+		texts[] = {"10 sec","30 secs","1 min","1.5 min","2 min"};
+		default = 30;
+	};
+};
+
+class CfgDebriefing
+{
+	class End1
+	{
+		title = "OPFOR WINS!";
+		subtitle = "Blufor Lost";
+		description = "Opfor managed to run the flag to their base.";
+	};
+	class End2
+	{
+		title = "BLUFOR WINS!";
+		subtitle = "Opfor Lost";
+		description = "Blufor managed to run the flag to their base.";
+	};
+	class End3
+	{
+		title = "OPFOR WINS";
+		subtitle =  "Blufor Lost";
+		description = "Opfor killed the entire Blufor team.";
+	};
+	class End4
+	{
+		title = "BLUFOR WINS!";
+		subtitle = "Opfor lost";
+		description = "Blufor killed the entire Opfor team.";
+	};
+	class End5
+	{
+		title = "STALEMATE!";
+		subtitle = "No team won.";
+		description = "No team was able to run the flag to their home base within the mission time limit.";
+	};
+};

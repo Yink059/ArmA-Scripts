@@ -1,0 +1,169 @@
+controls[]=
+{
+	Frame_main,
+	RscText_1000,
+	Button_diagnose,
+	Button_treat,
+	Button_head,
+	Button_body,
+	Button_hands,
+	Button_legs,
+	Button_cpr,
+	Text_status,
+	Button_bandage,
+	Button_special,
+	button_epi,
+	button_morphine
+};
+////////////////////////////////////////////////////////
+// GUI EDITOR OUTPUT START (by |TG-355th| Yink, v1.063, #Mivawy)
+////////////////////////////////////////////////////////
+
+class Frame_main: RscFrame
+{
+	idc = 1800;
+	x = 5 * GUI_GRID_W + GUI_GRID_X;
+	y = 2 * GUI_GRID_H + GUI_GRID_Y;
+	w = 30 * GUI_GRID_W;
+	h = 5.5 * GUI_GRID_H;
+};
+class RscText_1000: RscText
+{
+	idc = 1000;
+	text = "MedYinkâ„¢"; //--- ToDo: Localize;
+	x = 15.5 * GUI_GRID_W + GUI_GRID_X;
+	y = 0 * GUI_GRID_H + GUI_GRID_Y;
+	w = 9 * GUI_GRID_W;
+	h = 2 * GUI_GRID_H;
+	sizeEx = 2 * GUI_GRID_H;
+};
+class Button_diagnose: RscButton
+{
+	idc = 1600;
+	text = "Diagnose"; //--- ToDo: Localize;
+	x = 6 * GUI_GRID_W + GUI_GRID_X;
+	y = 3 * GUI_GRID_H + GUI_GRID_Y;
+	w = 4 * GUI_GRID_W;
+	h = 3.5 * GUI_GRID_H;
+};
+class Button_treat: RscButton
+{
+	idc = 1601;
+	text = "Treat"; //--- ToDo: Localize;
+	x = 30 * GUI_GRID_W + GUI_GRID_X;
+	y = 4.5 * GUI_GRID_H + GUI_GRID_Y;
+	w = 4 * GUI_GRID_W;
+	h = 2 * GUI_GRID_H;
+};
+class Button_head: RscButton
+{
+	idc = 1602;
+	text = "Head"; //--- ToDo: Localize;
+	x = 11.5 * GUI_GRID_W + GUI_GRID_X;
+	y = 3 * GUI_GRID_H + GUI_GRID_Y;
+	w = 3 * GUI_GRID_W;
+	h = 1 * GUI_GRID_H;
+};
+class Button_body: RscButton
+{
+	idc = 1603;
+	text = "Body"; //--- ToDo: Localize;
+	x = 16 * GUI_GRID_W + GUI_GRID_X;
+	y = 3 * GUI_GRID_H + GUI_GRID_Y;
+	w = 3 * GUI_GRID_W;
+	h = 1 * GUI_GRID_H;
+};
+class Button_hands: RscButton
+{
+	idc = 1604;
+	text = "Hands"; //--- ToDo: Localize;
+	x = 25.5 * GUI_GRID_W + GUI_GRID_X;
+	y = 3 * GUI_GRID_H + GUI_GRID_Y;
+	w = 3 * GUI_GRID_W;
+	h = 1 * GUI_GRID_H;
+};
+class Button_legs: RscButton
+{
+	idc = 1605;
+	text = "Legs"; //--- ToDo: Localize;
+	x = 21 * GUI_GRID_W + GUI_GRID_X;
+	y = 3 * GUI_GRID_H + GUI_GRID_Y;
+	w = 3 * GUI_GRID_W;
+	h = 1 * GUI_GRID_H;
+};
+class Button_cpr: RscButton
+{
+	idc = 1606;
+	text = "CPR"; //--- ToDo: Localize;
+	x = 30 * GUI_GRID_W + GUI_GRID_X;
+	y = 3 * GUI_GRID_H + GUI_GRID_Y;
+	w = 4 * GUI_GRID_W;
+	h = 1 * GUI_GRID_H;
+};
+class Text_status: RscText
+{
+	idc = 1001;
+	x = 10.5 * GUI_GRID_W + GUI_GRID_X;
+	y = 7.5 * GUI_GRID_H + GUI_GRID_Y;
+	w = 20 * GUI_GRID_W;
+	h = 1 * GUI_GRID_H;
+};
+class Button_bandage: RscButton
+{
+	idc = 1607;
+	text = "Bandage"; //--- ToDo: Localize;
+	x = 11.5 * GUI_GRID_W + GUI_GRID_X;
+	y = 5 * GUI_GRID_H + GUI_GRID_Y;
+	w = 4.5 * GUI_GRID_W;
+	h = 1.5 * GUI_GRID_H;
+};
+class Button_special: RscButton
+{
+	idc = 1608;
+	text = "Special"; //--- ToDo: Localize;
+	x = 24 * GUI_GRID_W + GUI_GRID_X;
+	y = 5 * GUI_GRID_H + GUI_GRID_Y;
+	w = 4.5 * GUI_GRID_W;
+	h = 1.5 * GUI_GRID_H;
+};
+class button_epi: RscButton
+{
+	idc = 1609;
+	text = "Epinephrine"; //--- ToDo: Localize;
+	x = 17.5 * GUI_GRID_W + GUI_GRID_X;
+	y = 4.5 * GUI_GRID_H + GUI_GRID_Y;
+	w = 4.5 * GUI_GRID_W;
+	h = 1 * GUI_GRID_H;
+};
+class button_morphine: RscButton
+{
+	idc = 1610;
+	text = "Morphine"; //--- ToDo: Localize;
+	x = 17.5 * GUI_GRID_W + GUI_GRID_X;
+	y = 6 * GUI_GRID_H + GUI_GRID_Y;
+	w = 4.5 * GUI_GRID_W;
+	h = 1 * GUI_GRID_H;
+};
+////////////////////////////////////////////////////////
+// GUI EDITOR OUTPUT END
+////////////////////////////////////////////////////////
+/* #Mivawy
+$[
+	1.063,
+	["medyink",[[0,0,1,1],0.025,0.04,"GUI_GRID"],0,0,0],
+	[1800,"Frame_main",[2,"",["5 * GUI_GRID_W + GUI_GRID_X","2 * GUI_GRID_H + GUI_GRID_Y","30 * GUI_GRID_W","5.5 * GUI_GRID_H"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1000,"",[2,"MedYinkâ„¢",["15.5 * GUI_GRID_W + GUI_GRID_X","0 * GUI_GRID_H + GUI_GRID_Y","9 * GUI_GRID_W","2 * GUI_GRID_H"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","2"],[]],
+	[1600,"Button_diagnose",[2,"Diagnose",["6 * GUI_GRID_W + GUI_GRID_X","3 * GUI_GRID_H + GUI_GRID_Y","4 * GUI_GRID_W","3.5 * GUI_GRID_H"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1601,"Button_treat",[2,"Treat",["30 * GUI_GRID_W + GUI_GRID_X","4.5 * GUI_GRID_H + GUI_GRID_Y","4 * GUI_GRID_W","2 * GUI_GRID_H"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1602,"Button_head",[2,"Head",["11.5 * GUI_GRID_W + GUI_GRID_X","3 * GUI_GRID_H + GUI_GRID_Y","3 * GUI_GRID_W","1 * GUI_GRID_H"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1603,"Button_body",[2,"Body",["16 * GUI_GRID_W + GUI_GRID_X","3 * GUI_GRID_H + GUI_GRID_Y","3 * GUI_GRID_W","1 * GUI_GRID_H"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1604,"Button_hands",[2,"Hands",["25.5 * GUI_GRID_W + GUI_GRID_X","3 * GUI_GRID_H + GUI_GRID_Y","3 * GUI_GRID_W","1 * GUI_GRID_H"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1605,"Button_legs",[2,"Legs",["21 * GUI_GRID_W + GUI_GRID_X","3 * GUI_GRID_H + GUI_GRID_Y","3 * GUI_GRID_W","1 * GUI_GRID_H"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1606,"Button_cpr",[2,"CPR",["30 * GUI_GRID_W + GUI_GRID_X","3 * GUI_GRID_H + GUI_GRID_Y","4 * GUI_GRID_W","1 * GUI_GRID_H"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1001,"Text_status",[2,"",["10.5 * GUI_GRID_W + GUI_GRID_X","7.5 * GUI_GRID_H + GUI_GRID_Y","20 * GUI_GRID_W","1 * GUI_GRID_H"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1607,"Button_bandage",[2,"Bandage",["11.5 * GUI_GRID_W + GUI_GRID_X","5 * GUI_GRID_H + GUI_GRID_Y","4.5 * GUI_GRID_W","1.5 * GUI_GRID_H"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1608,"Button_special",[2,"Special",["24 * GUI_GRID_W + GUI_GRID_X","5 * GUI_GRID_H + GUI_GRID_Y","4.5 * GUI_GRID_W","1.5 * GUI_GRID_H"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1609,"button_epi",[2,"Epinephrine",["17.5 * GUI_GRID_W + GUI_GRID_X","4.5 * GUI_GRID_H + GUI_GRID_Y","4.5 * GUI_GRID_W","1 * GUI_GRID_H"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1610,"button_morphine",[2,"Morphine",["17.5 * GUI_GRID_W + GUI_GRID_X","6 * GUI_GRID_H + GUI_GRID_Y","4.5 * GUI_GRID_W","1 * GUI_GRID_H"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]]
+]
+*/

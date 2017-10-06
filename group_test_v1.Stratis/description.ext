@@ -1,0 +1,5 @@
+#include "YGM\Dialogs\YinkGmDefines.hpp"
+
+respawn = "BASE";
+respawnDelay = 5;
+respawnDialog = true;
