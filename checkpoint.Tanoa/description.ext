@@ -1,0 +1,28 @@
+onLoadName 		= Checkpoint;
+author 			= Yink;						
+loadScreen 		= "picture\jedi_mind_trick.jpg";
+
+class CfgSounds
+{
+	class intro_music
+	{
+		name = "intro_music"; // Name for mission editor
+		sound[] = {\sound\intro_m.ogg, .9, 1.0};
+		titles[] = {0, ""};
+	};
+	class move_along
+	{
+		name = "move_along"; // Name for mission editor
+		sound[] = {\sound\move_along.ogg, .8, 1.0};
+		titles[] = {0, ""};
+	};
+	class see_id
+	{
+		name = "see_id"; // Name for mission editor
+		sound[] = {\sound\see_id.ogg, .8, 1.0};
+		titles[] = {0, ""};
+	};
+
+};
+
+#include "Yink\defines_yink\defines_yink.cpp"
