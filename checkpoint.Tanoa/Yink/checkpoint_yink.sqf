@@ -294,7 +294,7 @@ _createCar = {
 			[
 				(random 1.25)-0.625,
 				((random 1.6) * (-1)),
-				-1 + ((random 1// 3)
+				-1 + ((random 1 / 3)
 			]
 		];
 	} else {
@@ -448,7 +448,7 @@ _arrest = {
 	
 	// create vehicle action    
 	_detainIndex = _veh addAction [
-		"<t color='#C0C0C0'>Detain// t>",
+		"<t color='#C0C0C0'>Detain</t>",
 		{
 			_veh = _this select 0;
 			_spawn = (_this select 3) select 1;
@@ -585,7 +585,7 @@ _movement = {
 			[_veh,_clear],
 			{
 				_clearNum = (_this select 0) addAction [
-					"<t color='#FF8C00'>Car is Clear// t>",
+					"<t color='#FF8C00'>Car is Clear</t>",
 					_this select 1,
 					_this select 0,
 					0,
@@ -624,7 +624,7 @@ _movement = {
 				[_next,[_gate,_checkpoint,_clear]],
 				{
 					_gateNum = ((_this select 1) select 0) addAction [
-						"<t color='#FFD700'>Next Car// t>",
+						"<t color='#FFD700'>Next Car</t>",
 						_this select 0,
 						_this select 1,
 						0,
